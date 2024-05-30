@@ -46,7 +46,7 @@ public final class AddAltCmd extends Command
 	
 	private void add(String name)
 	{
-		if(name.equalsIgnoreCase("Alexander01998"))
+		if(name.equalsIgnoreCase("Alexander01998")) // interesting easter egg
 			return;
 		
 		WURST.getAltManager().add(new CrackedAlt(name));
@@ -68,7 +68,7 @@ public final class AddAltCmd extends Command
 				continue;
 			
 			if(name.equalsIgnoreCase(playerName)
-				|| name.equalsIgnoreCase("Alexander01998"))
+				|| name.equalsIgnoreCase("Alexander01998")) // again?
 				continue;
 			
 			altManager.add(new CrackedAlt(name));

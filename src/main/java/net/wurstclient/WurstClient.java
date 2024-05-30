@@ -170,7 +170,7 @@ public enum WurstClient
 		}catch(IOException e)
 		{
 			throw new RuntimeException(
-				"Couldn't create .minecraft/wurst folder.", e);
+				"Couldn't create directory .minecraft/wurst", e);
 		}
 		
 		return wurstFolder;

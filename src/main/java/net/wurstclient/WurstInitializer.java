@@ -22,7 +22,7 @@ public final class WurstInitializer implements ModInitializer
 		
 		if(initialized)
 			throw new RuntimeException(
-				"WurstInitializer.onInitialize() ran twice!");
+				"WurstInitializer.onInitialize() ran twice!"); //very bad
 		
 		WurstClient.INSTANCE.initialize();
 		initialized = true;
