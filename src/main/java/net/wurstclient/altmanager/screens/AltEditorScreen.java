@@ -137,7 +137,7 @@ public abstract class AltEditorScreen extends Screen
 		}catch(IOException e)
 		{
 			e.printStackTrace();
-			message = "\u00a74\u00a7lSkin folder could not be created.";
+			message = "\u00a74\u00a7lError: Skin folder could not be created.";
 		}
 	}
 	
@@ -203,7 +203,7 @@ public abstract class AltEditorScreen extends Screen
 				Files.copy(in, path, StandardCopyOption.REPLACE_EXISTING);
 			}
 			
-			return "\u00a7a\u00a7lSaved skin as " + name + ".png";
+			return "\u00a7a\u00a7lSaved skin successfully as " + name + ".png";
 			
 		}catch(IOException e)
 		{

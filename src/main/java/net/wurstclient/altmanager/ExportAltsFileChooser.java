@@ -26,8 +26,8 @@ public final class ExportAltsFileChooser extends JFileChooser
 		
 		int response = JOptionPane.showConfirmDialog(null,
 			"This will create an unencrypted (plain text) copy of your alt list.\n"
-				+ "Storing passwords in plain text is risky because they can easily be stolen by a virus.\n"
-				+ "Store this copy somewhere safe and keep it outside of your Minecraft folder!",
+				+ "Store this copy somewhere safe and keep it outside of your Minecraft folder!\n"
+				+ "Not doing so will most likely result in it being stolen by a Grabber.",
 			"Warning", JOptionPane.OK_CANCEL_OPTION,
 			JOptionPane.WARNING_MESSAGE);
 		
