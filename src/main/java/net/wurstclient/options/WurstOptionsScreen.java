@@ -87,10 +87,10 @@ public class WurstOptionsScreen extends Screen
 			b -> vanillaSpoofOtf.doPrimaryAction());
 		
 		new WurstOptionsButton(-154, 96,
-			() -> "Translations: " + (!forceEnglish.isChecked() ? "ON" : "OFF"),
-			"Allows text in Wurst to be displayed in other languages than"
+			() -> "Translator: " + (!forceEnglish.isChecked() ? "ON" : "OFF"),
+			"Translates text in Wurst into other languages than"
 				+ " English. It will use the same language that Minecraft is"
-				+ " set to.\n\n" + "This is an experimental feature!",
+				+ " set to.\n\n" + "This isn't 100% accurate!",
 			b -> forceEnglish.setChecked(!forceEnglish.isChecked()));
 	}
 	
@@ -99,17 +99,14 @@ public class WurstOptionsScreen extends Screen
 		XRayHack xRayHack = WurstClient.INSTANCE.getHax().xRayHack;
 		
 		new WurstOptionsButton(-50, 24, () -> "Keybinds",
-			"Keybinds allow you to toggle any hack or command by simply"
+			"Keybing Manager to toggle any hack or command by simply"
 				+ " pressing a button.",
 			b -> client.setScreen(new KeybindManagerScreen(this)));
 		
 		new WurstOptionsButton(-50, 48, () -> "X-Ray Blocks",
-			"Manager for the blocks that X-Ray will show.",
-			b -> xRayHack.openBlockListEditor(this));
+			"X-Ray Block Manager.", b -> xRayHack.openBlockListEditor(this));
 		
-		new WurstOptionsButton(-50, 72, () -> "Zoom",
-			"The Zoom Manager allows you to change the zoom key and how far it"
-				+ " will zoom in.",
+		new WurstOptionsButton(-50, 72, () -> "Zoom", "Zooming Manager",
 			b -> client.setScreen(new ZoomManagerScreen(this)));
 	}
 	
@@ -131,8 +128,10 @@ public class WurstOptionsScreen extends Screen
 			b -> os.open(
 				"https://wurstforum.net/?utm_source=Wurst+Client&utm_medium=Wurst+Options&utm_content=WurstForum"));
 		
-		new WurstOptionsButton(54, 96, () -> "Twitter", "@Wurst_Imperium",
-			b -> os.open("https://www.wurstclient.net/twitter/"));
+		new WurstOptionsButton(54, 96, () -> "Github",
+			"Since this is a custom version, it won't go to the normal Wurst Github :)",
+			b -> os
+				.open("https://github.com/suspectedesp/custom-wurst-client"));
 		
 		new WurstOptionsButton(54, 120, () -> "Donate",
 			"§n§lWurstClient.net/donate\n"
@@ -170,15 +169,15 @@ public class WurstOptionsScreen extends Screen
 		int y1 = 40;
 		int y2 = height / 4 + 24 - 28;
 		
-		context.drawCenteredTextWithShadow(tr, "Wurst Options", middleX, y1,
-			0xffffff);
+		context.drawCenteredTextWithShadow(tr, "Wurst Client Options", middleX,
+			y1, 0xffffff);
 		
-		context.drawCenteredTextWithShadow(tr, "Settings", middleX - 104, y2,
+		context.drawCenteredTextWithShadow(tr, "Misc", middleX - 104, y2,
 			0xcccccc);
 		context.drawCenteredTextWithShadow(tr, "Managers", middleX, y2,
 			0xcccccc);
-		context.drawCenteredTextWithShadow(tr, "Links", middleX + 104, y2,
-			0xcccccc);
+		context.drawCenteredTextWithShadow(tr, "Wurst Related Links",
+			middleX + 104, y2, 0xcccccc);
 	}
 	
 	private void renderButtonTooltip(DrawContext context, int mouseX,

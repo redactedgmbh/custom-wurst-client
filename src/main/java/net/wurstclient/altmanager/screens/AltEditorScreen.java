@@ -361,7 +361,7 @@ public abstract class AltEditorScreen extends Screen
 		// text
 		context.drawTextWithShadow(textRenderer, "Name (for cracked alts), or",
 			width / 2 - 100, 37, 10526880);
-		context.drawTextWithShadow(textRenderer, "E-Mail (for premium alts)",
+		context.drawTextWithShadow(textRenderer, "E-Mail (for microsoft alts)",
 			width / 2 - 100, 47, 10526880);
 		context.drawTextWithShadow(textRenderer,
 			"Password (leave blank for cracked alts)", width / 2 - 100, 87,

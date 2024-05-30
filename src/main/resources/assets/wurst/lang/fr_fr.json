@@ -173,7 +173,7 @@
   "gui.wurst.nochatreports.unsafe_server.title": "§4§lATTENTION :§r Serveur non protégé",
   "gui.wurst.nochatreports.unsafe_server.message": "Ce serveur nécessite l'activation des signatures de chat, ce qui expose votre compte au risque de signalements de chat frauduleux.\n\nVous pouvez rejoindre ce serveur si vous débloquez les signatures de chat, puis vous reconnectez. Si vous le faites, envisagez de ne pas utiliser le chat du tout. Ou jouez sur un compte secondaire que cela ne vous dérange pas de perdre.\n\nS'il s'agit de votre serveur, vous pouvez résoudre ce problème en définissant 'enforce-secure-profile' sur false dans server.properties. À la manière typique de Mojang, ce paramètre fait le contraire de ce à quoi il ressemble.",
   "toast.wurst.nochatreports.unsafe_server.title": "Les messages de chat peuvent être signalés",
-  "toast.wurst.nochatreports.unsafe_server.message": "Les messages envoyés sur ce serveur peuvent être signalés à Mojang Big Brother et votre compte peut être banni à l'échelle mondiale",
+  "toast.wurst.nochatreports.unsafe_server.message": "Les messages envoyés sur ce serveur peuvent être signalés à Big Brother (Mojang) et votre compte peut être banni à l'échelle mondiale",
   "gui.wurst.nochatreports.ncr_mod_server.title": "Serveur \"No Chat Reports\"",
   "gui.wurst.nochatreports.ncr_mod_server.message": "Ce serveur utilise le mod \"No Chat Reports\".\n\nVous pouvez rejoindre ce serveur si vous bloquez les signatures de chat et désactivez le VanillaSpoof.",
   "button.wurst.nochatreports.signatures_status": "Signatures: ",
