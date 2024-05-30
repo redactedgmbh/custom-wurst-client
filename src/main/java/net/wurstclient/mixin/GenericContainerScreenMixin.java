@@ -23,6 +23,7 @@ import net.minecraft.text.Text;
 import net.wurstclient.WurstClient;
 import net.wurstclient.hacks.AutoStealHack;
 
+@SuppressWarnings("unused") // ScreenHandlerProvider<GenericContainerScreenHandler>
 @Mixin(GenericContainerScreen.class)
 public abstract class GenericContainerScreenMixin
 	extends HandledScreen<GenericContainerScreenHandler>

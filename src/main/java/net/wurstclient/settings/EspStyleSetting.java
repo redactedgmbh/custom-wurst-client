@@ -38,7 +38,7 @@ public final class EspStyleSetting extends EnumSetting<EspStyleSetting.EspStyle>
 	{
 		BOXES("Boxes only", true, false),
 		LINES("Lines only", false, true),
-		LINES_AND_BOXES("Lines and boxes", true, true);
+		LINES_AND_BOXES("Lines & boxes", true, true);
 		
 		private final String name;
 		private final boolean boxes;

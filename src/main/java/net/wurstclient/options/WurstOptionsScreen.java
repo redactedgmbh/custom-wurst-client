@@ -129,7 +129,9 @@ public class WurstOptionsScreen extends Screen
 				"https://wurstforum.net/?utm_source=Wurst+Client&utm_medium=Wurst+Options&utm_content=WurstForum"));
 		
 		new WurstOptionsButton(54, 96, () -> "Github",
-			"Since this is a custom version, it won't go to the normal Wurst Github :)",
+			"§n§lCustom Wurst CLient\n"
+				+ "Since this is a custom version, it won't go to the normal Wurst Github :)"
+				+ "LX was here",
 			b -> os
 				.open("https://github.com/suspectedesp/custom-wurst-client"));
 		

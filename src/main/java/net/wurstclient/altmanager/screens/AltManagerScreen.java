@@ -446,7 +446,7 @@ public final class AltManagerScreen extends Screen
 		context.drawCenteredTextWithShadow(textRenderer,
 			"Alts: " + altManager.getList().size(), width / 2, 14, 10526880);
 		context.drawCenteredTextWithShadow(
-			textRenderer, "premium: " + altManager.getNumPremium()
+			textRenderer, "Microsoft: " + altManager.getNumPremium()
 				+ ", cracked: " + altManager.getNumCracked(),
 			width / 2, 24, 10526880);
 		
@@ -692,7 +692,7 @@ public final class AltManagerScreen extends Screen
 		
 		public String getBottomText(Alt alt)
 		{
-			String text = alt.isCracked() ? "\u00a78cracked" : "\u00a72premium";
+			String text = alt.isCracked() ? "\u00a78cracked" : "\u00a72microsoft";
 			
 			if(alt.isFavorite())
 				text += "\u00a7r, \u00a7efavorite";

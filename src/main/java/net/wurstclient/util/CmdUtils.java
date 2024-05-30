@@ -26,8 +26,8 @@ public enum CmdUtils
 		Feature feature = stream.findFirst().orElse(null);
 		
 		if(feature == null)
-			throw new CmdError(
-				"A feature named \"" + name + "\" could not be found.");
+			throw new CmdError("There is no feature named \"" + name
+				+ "\" | hence it could not be found.");
 		
 		return feature;
 	}
@@ -40,7 +40,7 @@ public enum CmdUtils
 		
 		if(setting == null)
 			throw new CmdError("A setting named \"" + name
-				+ "\" could not be found in " + feature.getName() + ".");
+				+ "\" could not be found inside of " + feature.getName() + ".");
 		
 		return setting;
 	}
