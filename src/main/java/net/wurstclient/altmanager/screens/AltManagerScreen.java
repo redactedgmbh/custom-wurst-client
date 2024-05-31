@@ -692,7 +692,8 @@ public final class AltManagerScreen extends Screen
 		
 		public String getBottomText(Alt alt)
 		{
-			String text = alt.isCracked() ? "\u00a78cracked" : "\u00a72microsoft";
+			String text =
+				alt.isCracked() ? "\u00a78cracked" : "\u00a72microsoft";
 			
 			if(alt.isFavorite())
 				text += "\u00a7r, \u00a7efavorite";

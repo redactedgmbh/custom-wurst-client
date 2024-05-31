@@ -97,8 +97,8 @@ public final class FileSetting extends Setting
 		ArrayList<Path> files = listFiles();
 		if(files.isEmpty())
 			throw new IllegalStateException(
-				"Created default files but directory is still empty!"); 
-				// how can this happen?
+				"Created default files but directory is still empty!");
+		// how can this happen?
 		
 		return files;
 	}
